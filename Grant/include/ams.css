@@ -1,0 +1,175 @@
+<!--
+在程序的 <head> 内增加<link rel="stylesheet" href="../include/ams.css">即可。
+-->
+<style type="text/css">
+.inputUnderline
+{
+    BORDER-RIGHT: dodgerblue 1px;
+    BORDER-TOP: dodgerblue 1px;
+    BORDER-LEFT: dodgerblue 1px;
+    BORDER-BOTTOM: gray 1px solid;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: center
+}
+.font
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 18pt;
+    FONT-FAMILY: "宋体", "Arial Narrow", "Times New Roman"
+}
+.bfont
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: "宋体", "Arial Narrow", "Times New Roman"
+}
+.bbfont
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: "宋体", "Arial Narrow", "Times New Roman"
+}
+.cbfont
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 16pt;
+    FONT-FAMILY: "宋体", "Arial Narrow", "Times New Roman"
+}
+A:link
+{
+    COLOR: mediumblue;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: mediumblue;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: fuchsia;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: red;
+    FONT-STYLE: normal;
+    TEXT-DECORATION: underline
+}
+BODY
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+TD
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+P
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+.allbtn
+{
+    FONT-SIZE: 9pt;
+    COLOR: maroon
+}
+.btn1
+{
+    FONT-SIZE: 9pt;
+    COLOR: mediumslateblue
+}
+.btn2
+{
+    FONT-SIZE: 9pt;
+    COLOR: purple
+}
+.bd1
+{
+    BACKGROUND-IMAGE: url(Bar-a136.gif);
+    HEIGHT: 16pt;
+    BACKGROUND-COLOR: #ccccff
+}
+.bd2
+{
+    BORDER-RIGHT: powderblue double;
+    BORDER-TOP: powderblue double;
+    BACKGROUND-IMAGE: url(Back-969.jpg);
+    BORDER-LEFT: powderblue double;
+    BORDER-BOTTOM: powderblue double;
+    FONT-FAMILY: 华文新魏;
+    HEIGHT: 19pt;
+    BACKGROUND-COLOR: #f5fff4
+}
+.notice
+{
+    BACKGROUND-COLOR: #e9e9f9
+}
+.thead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000
+}
+.thead1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt
+}
+.thead2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt
+}
+.tftr
+{
+    BACKGROUND-COLOR: #f0f0f0
+}
+.fly
+{
+    FILTER: Shadow(Color=#FFCC99, Direction=90)
+}
+.bd3
+{
+    COLOR: white;
+    HEIGHT: 15pt;
+    BACKGROUND-COLOR: #6699cc
+}
+INPUT
+{
+    FONT-SIZE: 9pt
+}
+SELECT.select1
+{
+    BORDER-RIGHT: gray 0px solid;
+    BORDER-TOP: gray 0px solid;
+    LIST-STYLE-POSITION: inside;
+    BORDER-LEFT: gray 0px solid;
+    COLOR: blue;
+    BORDER-BOTTOM: gray 0px solid;
+    FONT-FAMILY: 新宋体;
+    LIST-STYLE-TYPE: none;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: small-caps
+}
+INPUT.a
+{
+    BORDER-RIGHT: lightskyblue 2px solid;
+    BORDER-TOP: lightskyblue 2px solid;
+    BORDER-LEFT: lightskyblue 2px solid;
+    BORDER-BOTTOM: lightskyblue 2px solid;
+    BACKGROUND-COLOR: paleturquoise
+}
+IFRAME.myFrame
+{
+    BORDER-RIGHT: black 0px outset;
+    BORDER-TOP: black 0px outset;
+    BORDER-LEFT: black 0px outset;
+    CURSOR: hand;
+    BORDER-BOTTOM: black 0px outset
+}
+</style>

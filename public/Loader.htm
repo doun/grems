@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://www.nhcool.com/deleine/code.htm -->
+<html><head>
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+<link type="text/css" rel="stylesheet" href="..\Library\Default.css">
+<style type="text/css">
+	body {background-color:white;border:1px solid white}
+</style>
+<style>
+
+.FrameWnd {
+	BACKGROUND-COLOR: #d6d3ce; BORDER-BOTTOM: #ffffff 1px outset; 
+	BORDER-LEFT: #ffffff 1px outset; BORDER-RIGHT: #ffffff 1px outset; 
+	BORDER-TOP: #ffffff 1px outset; FONT-FAMILY: Verdana; FONT-SIZE: 10pt;
+}
+.winslogo {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: green 3px solid; 
+	BORDER-LEFT: green 3px solid; 
+	BORDER-RIGHT:#6c6 3px solid; 
+	BORDER-TOP: #6c6 3px solid;text-align:center;padding-top:4;
+	font-weight:bold;font-family:MS Sans Serif
+}
+
+td {font-size:11px}
+</style>
+<script language=javascript>
+	function setText(str)
+	{
+		if(str=="default") str="载入"
+		if(document.readyState=="complete")
+		txtContent.innerHTML="...正在"+str+"，请稍候..."
+	}
+</script>
+</head>
+<body>
+<table border="0" cellPadding="0" cellSpacing="0" class="FrameWnd" style="POSITION: absolute;width:100%;height:100%">
+  <tbody>
+    <tr><td bgColor="#ffffff" align="right">
+      <div class="winslogo" style="HEIGHT: 20px; LEFT: 5px; POSITION: absolute; TOP: 30px; WIDTH: 23px;color:red;z-index:5">Ｇ</div>
+      <div class="winslogo" style="HEIGHT: 15px; LEFT: 45px; POSITION: absolute; TOP: 20px; WIDTH: 23px;z-index:5;font-size:9px;color:blue">Ｍ</div>
+      <div class="winslogo" style="HEIGHT: 25px; LEFT: 33px; POSITION: absolute; TOP: 30px; WIDTH: 25px;color:green">Ｅ</div>
+      <div class="winslogo" style="HEIGHT: 30px; LEFT: 10px; POSITION: absolute; TOP: 10px; WIDTH: 30px;PADDING-TOP:6;color:darkorange">Ｒ</div>
+      <div class="winslogo" style="HEIGHT: 25px; LEFT: 60px; POSITION: absolute; TOP: 25px; WIDTH: 25px;PADDING-TOP:6;color:purple">Ｓ</div>
+      <img src="../images/logo.gif" style="width:148;height:50" WIDTH="148" HEIGHT="50">
+     </td></tr>
+    <td height="5">
+     
+<script language="javascript">   	
+	function CreateLoader(color)
+	{
+		color=(""+color).replace(/\W/g,"")
+		if(color.length!=6)
+		{
+			alert("请您输入正确的颜色参数(6位字符，16进制)!")
+			return
+		}
+		var color1=eval("0x"+color.substring(0,2))
+		var color2=eval("0x"+color.substring(2,4))
+		var color3=eval("0x"+color.substring(4))
+		elt="0123456789ABCDEF";
+		var	sTBHTMLS="";
+		var	sTBHTMLE="";
+		for(var	i=0;i<0xFF-0x99;i+=2)
+		{
+			var	cr="";
+			var	l;
+			var	sTBHTML="";
+			l=i+color3;
+			for(var j=0;j<2;j++)
+			{
+				var	n=l % 16;
+				l=l >> 4;
+				cr=elt.charAt(n)+cr;
+			}
+			l=i+color2;
+			for(var j=0;j<2;j++)
+			{
+				var	n=l % 16;
+				l=l >> 4;
+				cr=elt.charAt(n)+cr;
+			}
+			l=i+color1;
+			for(var j=0;j<2;j++)
+			{
+				var	n=l % 16;
+				l=l >> 4;
+				cr=elt.charAt(n)+cr;
+			}
+			var	w=i>95?6:3
+			sTBHTML="<span style='height:5;width:"+w+";background-color:#"+cr+";margin:0;padding:0'></span>"
+			sTBHTMLS+=sTBHTML;
+			sTBHTMLE=sTBHTML+sTBHTMLE;
+		}
+		var	sTBHTML=sTBHTMLS+sTBHTMLE;
+		document.write("<marquee scrollamount='20' direction='right'  scrolldelay='1' height='5' style='width:100%;height:4; font-size:6px;background-color:#"+color+"'>")
+		document.write(sTBHTML)
+		document.write("</marquee>")
+	}	
+	CreateLoader("339933")
+	</script>
+    </td><tr><td height="1" align="center" style="background-color:green" id='txtContent'>...正在载入，请稍候...</tr>
+  </tbody></table></div></body></html>

@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>流程制图</TITLE>
+<script language=jscript src="flow.js"></script>
+<script>	
+	function window.onload()
+	{
+		new FlowBuilder("oDom")
+		oDom.load("buildTab")
+	}
+</script>
+<style>
+	body {background-color:menu;margin:0;border:0;overflow:hidden}
+	button {border:1px solid black}
+	table {position:relative;width:100%;height:1;font-size:12px}
+	input {border:1px inset white}
+	.backSpan {display:none}
+</style>
+</HEAD>
+<BODY>
+<span style="position:absolute;width:expression(document.body.clientWidth-310);height:100%;overflow:auto;border:1px solid black;background-color:white;font-size:12;text-align:center">
+&nbsp;
+</span>
+<span id=oAction style="position:absolute;right:0;width:300;height:100%;overflow:hidden;border:1px solid black">
+
+</span>
+<span id=buildTab class=backSpan onaction="oDom.initTabGroup()">
+<table>
+<caption>添加标签</caption>
+<tr><Td>名称：</td><td><input type=text value="NoName" id="TabName"></tr>
+<tr><Td>等级：</td><td>
+<select style="width:150" id=availableLevel>
+<option value="1">1</option>
+</select></tr>
+<tr><Td style='text-align:center' colspan=2><button onclick="oDom.AddTab()" >添加</button></td></tr>
+</table>
+</span>
+</BODY>
+</HTML>

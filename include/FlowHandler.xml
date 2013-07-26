@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="yes"?>
+<workflow>
+	<tag name="Apply" level="1">
+		<status name="APP">
+			<action name="modify">
+				<mode value="_USER_"/>				
+				<toTag value="_BLANK_"/>
+				<toStatus value="_BLANK_"/>				
+			</action>
+		</status>
+		<status name="SQT">
+			<action name="modify">
+				<mode value="_USER_"/>				
+				<toTag value="_BLANK_"/>
+				<toStatus value="_BLANK_"/>				
+			</action>
+		</status>
+	</tag>
+	<tag name="Sample" level="2">
+		<MultiAction name="RollToAPP">
+			<status name="SMP" >			
+				<mode value="_USER_"/>
+			</status>
+			<status name="APP"/>
+			<status name="ALS"/>
+			<status name="AQT"/>
+			<mode value="R01"/>
+			<toTag value="Apply"/>
+			<toStatus value="SQT"/>				
+		</MultiAction>
+						
+		<MultiAction name="ReSample">
+			<status name="ALS"/>
+			<status name="AQT"/>
+			<mode value="_USER_"/>				
+			<toTag value="_BLANK_"/>
+			<toStatus value="_BLANK_"/>				
+		</MultiAction>				
+		
+		<status name="APP">
+			<action name="DoSample">
+				<mode value="R01"/>				
+				<toTag value="_BLANK_"/>
+				<toStatus value="SMP"/>				
+			</action>
+		</status>
+		<status name="SMP">					
+			<action name="CancelSample">
+				<mode value="_USER_"/>				
+				<toTag value="_BLANK_"/>
+				<toStatus value="APP"/>				
+			</action>		
+			<action name="FinishSample">
+				<mode value="_USER_"/>				
+				<toTag value="Analyze"/>
+				<toStatus value="ALS"/>				
+			</action>
+		</status>		
+	</tag>	
+	
+	<tag name="Analyze" level="3">		
+		<MultiAction name="RollToAPP" relative="Sample/RollToAPP">
+			<status name="_GLOBAL_"/>			
+			<mode value="R01"/>			
+		</MultiAction>
+		
+		<status name="ALS">
+			<action name="Analyzing">
+				<mode value="R01" />
+				<toTag value="Check"/>
+				<toStatus value="CHK"/>
+			</action>			
+			<action name="RollToSample">
+				<mode value="R01"/>
+				<toTag value="Sample"/>
+				<toStatus value="AQT"/>
+			</action>
+		</status>
+		
+		<status name="CHK">
+			<action name="ReAnalyze">
+				<mode value="_USER_" />
+				<toTag value="_BLANK_" />
+				<toStatus value="_BLANK_"/>
+			</action>			
+		</status>
+		<status name="">
+		</status>
+	</tag>
+</workflow>

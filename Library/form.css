@@ -1,0 +1,118 @@
+formitem\:select
+{
+    BACKGROUND-COLOR: #ffcc66;
+    selectTable: 'border:1px solid #4a4';
+    DropDown: 'border-color:#4a4';
+    button: 'background-color:white;border:1px outset #4a4;color:green';
+    overoption: 'background:#4a4;color:white'
+}
+TEXTAREA
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    SCROLLBAR-FACE-COLOR: #4a4;
+    SCROLLBAR-HIGHLIGHT-COLOR: white;
+    OVERFLOW: auto;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    SCROLLBAR-SHADOW-COLOR: white;
+    SCROLLBAR-3DLIGHT-COLOR: #4a4;
+    SCROLLBAR-ARROW-COLOR: white;
+    SCROLLBAR-TRACK-COLOR: #eef;
+    BORDER-BOTTOM: 0px;
+    SCROLLBAR-DARKSHADOW-COLOR: #4a4;
+    HEIGHT: 100%
+}
+.FormText
+{
+    BORDER-RIGHT: #4a4 1px solid;
+    BORDER-TOP: #4a4 1px solid;
+    BORDER-LEFT: #4a4 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #4a4 1px solid
+}
+.FormTextBox
+{
+    BORDER-RIGHT: #4a4 1px solid;
+    BORDER-TOP: #4a4 1px solid;
+    BORDER-LEFT: #4a4 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #4a4 1px solid
+}
+.FormTextBoxTitle
+{
+    BORDER-RIGHT: #4a4 1px solid;
+    BORDER-TOP: #4a4 1px solid;
+    BORDER-LEFT: #4a4 1px solid;
+    BORDER-BOTTOM: #4a4 1px solid
+}
+IFRAME
+{
+    BORDER-RIGHT: #4a4 10px solid;
+    BORDER-TOP: #4a4 10px solid;
+    BORDER-LEFT: #4a4 10px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #4a4 10px solid;
+    POSITION: relative;
+    HEIGHT: 100%
+}
+#DateObject
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid
+}
+.btnSubmit
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-SIZE: 13px;
+    BORDER-LEFT: white 1px solid;
+    WIDTH: 60px;
+    COLOR: white;
+    BORDER-BOTTOM: white 1px solid;
+    HEIGHT: 16px;
+    BACKGROUND-COLOR: #228b22
+}
+TD
+{
+    TEXT-ALIGN: center
+}
+INPUT
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    BORDER-BOTTOM: 0px
+}
+SELECT
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    BORDER-BOTTOM: 0px
+}
+#divInputField TABLE
+{
+    BORDER-RIGHT: white 1px solid;
+    BORDER-TOP: #4a4 1px solid;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr="#FFFFFF",EndColorStr="#44AA44");
+    BORDER-LEFT: #4a4 1px solid;
+    COLOR: black;
+    BORDER-BOTTOM: white 1px solid
+}
+.btnSubmit
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+			StartColorStr="#339933", EndColorStr="#FFFFFF")  
+			progid:DXImageTransform.Microsoft.Shadow(color="green",Strength=3,Direction=135);
+    BORDER-LEFT: 0px;
+    WIDTH: 100px;
+    BORDER-BOTTOM: 0px;
+    HEIGHT: 22px
+}

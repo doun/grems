@@ -1,0 +1,51 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+'You can add special event handlers in this file that will get run automatically when
+'special Active Server Pages events occur. To create these handlers, just create a
+'subroutine with a name from the list below that corresponds to the event you want to
+'use. For example, to create an event handler for Session_OnStart, you would put the
+'following code into this file (without the comments):
+
+'Sub Session_OnStart
+'**Put your code here **
+'End Sub
+
+'EventName              Description
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+	'==Visual InterDev Generated - startspan==
+	'--Project Data Connection
+		Application("online") = 0
+		Application("GREMS_ConnectionString") = "Provider=MSDAORA.1;Data Source=p04;User ID=GREMS_WEB;Password=GREMS;User Id=GREMS_WEB;PASSWORD=GREMS;"
+		Application("GREMS_ConnectionTimeout") = 15
+		Application("GREMS_CommandTimeout") = 30
+		Application("GREMS_CursorLocation") = 3
+		Application("GREMS_RuntimeUserName") = "GREMS_WEB"
+		Application("GREMS_RuntimePassword") = "GREMS"
+		
+		Application("DBOwner")="GREMS"
+	'-- Project Data Environment
+		Set DE = Server.CreateObject("DERuntime.DERuntime")
+		Application("DE") = DE.Load(Server.MapPath("Global.ASA"), "_private/DataEnvironment/DataEnvironment.asa")
+	'==Visual InterDev Generated - endspan==
+	 '   Session("sys_timeout")="TEST"
+	  '  Session("sys_timeout").Timeout=20
+End Sub
+
+Sub Session_OnStart
+	Application("online") = Application("online") + 1
+End Sub
+
+Sub Session_OnEnd
+	Application("online") = Application("online") - 1
+End Sub
+
+</SCRIPT>
+
